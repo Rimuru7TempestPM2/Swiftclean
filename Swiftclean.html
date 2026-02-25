@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftClean Laundry | Price List</title>
+    <style>
+        :root {
+            --primary-blue: #1a4a95;
+            --accent-green: #4caf50;
+            --light-bg: #f4f7f6;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-bg);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .card {
+            background: var(--white);
+            max-width: 500px;
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            overflow: hidden;
+            border-top: 8px solid var(--primary-blue);
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #ffffff 0%, #e3f2fd 100%);
+        }
+
+        .logo-text {
+            color: var(--primary-blue);
+            font-weight: bold;
+            font-size: 24px;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .price-list-title {
+            color: #2e7d32;
+            font-size: 28px;
+            letter-spacing: 2px;
+            margin: 10px 0;
+            border-bottom: 2px solid #eee;
+            display: inline-block;
+        }
+
+        .services {
+            padding: 20px;
+        }
+
+        .service-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px dashed #ddd;
+        }
+
+        .service-name {
+            font-weight: 500;
+            color: #333;
+        }
+
+        .price {
+            font-weight: bold;
+            color: var(--primary-blue);
+        }
+
+        .promo-note {
+            font-size: 0.85em;
+            color: #666;
+            font-style: italic;
+            display: block;
+        }
+
+        .contact-section {
+            background: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .location {
+            font-size: 0.9em;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        /* Call to Action Buttons */
+        .cta-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s;
+        }
+
+        .btn:active { transform: scale(0.95); }
+
+        .btn-call { background-color: var(--primary-blue); }
+        .btn-whatsapp { background-color: var(--accent-green); }
+
+        .footer-note {
+            padding: 15px;
+            font-size: 0.8em;
+            text-align: center;
+            background: #eee;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="header">
+        <div class="logo-text">SWIFTCLEAN LAUNDRY</div>
+        <h1 class="price-list-title">PRICE LIST</h1>
+    </div>
+
+    <div class="services">
+        <div class="service-item">
+            <span class="service-name">Full Large Laundry Basket</span>
+            <span class="price">460</span>
+        </div>
+        <div class="service-item">
+            <span class="service-name">Full Small Laundry Basket</span>
+            <span class="price">360</span>
+        </div>
+        <div class="service-item">
+            <span class="service-name">Weighing Option</span>
+            <span class="price">50 / kg</span>
+        </div>
+        <div class="service-item" style="flex-direction: column;">
+            <div style="display:flex; justify-content: space-between;">
+                <span class="service-name">Large Duvet</span>
+                <span class="price">450</span>
+            </div>
+            <span class="promo-note">Free bedsheet & pillowcase wash</span>
+        </div>
+        <div class="service-item" style="flex-direction: column;">
+            <div style="display:flex; justify-content: space-between;">
+                <span class="service-name">Small Duvet</span>
+                <span class="price">350</span>
+            </div>
+            <span class="promo-note">Free bedsheet & pillowcase wash</span>
+        </div>
+        <div class="service-item">
+            <span class="service-name">One Pair of Shoes</span>
+            <span class="price">90</span>
+        </div>
+        <div class="service-item">
+            <span class="service-name">Piece of Cloth (Jacket, T-shirt, etc.)</span>
+            <span class="price">50</span>
+        </div>
+        <div class="service-item">
+            <span class="service-name">Mat / Carpet Cleaning</span>
+            <span class="price">350 - 600</span>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <p class="location">
+            📍 <strong>Location:</strong> Imperial - Runda Road<br>
+            (Newly constructed containers)
+        </p>
+        
+        <div class="cta-container">
+            <a href="tel:0758811941" class="btn btn-call">📞 Call Now</a>
+            <a href="https://wa.me/254758811941" class="btn btn-whatsapp">💬 WhatsApp</a>
+        </div>
+    </div>
+
+    <div class="footer-note">
+        <strong>Note:</strong> Free pickup and Delivery within Thika and its environs.
+    </div>
+</div>
+
+</body>
+</html>
