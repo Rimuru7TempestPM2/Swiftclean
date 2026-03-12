@@ -3,196 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SwiftClean Laundry | Price List</title>
+    <title>Swiftclean Laundry | Professional Cleaning Services</title>
+    <meta property="og:title" content="Swiftclean Laundry Price List">
+    <meta property="og:description" content="Professional Laundry, Duvet, and House Cleaning Services in Thika.">
     <style>
         :root {
-            --primary-blue: #1a4a95;
-            --accent-green: #4caf50;
-            --light-bg: #f4f7f6;
-            --white: #ffffff;
+            --swift-blue: #0056b3;
+            --swift-light-blue: #e3f2fd;
+            --swift-green: #28a745;
+            --text-main: #2d3436;
         }
+
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--light-bg);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
             margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
+            padding: 15px;
+            color: var(--text-main);
+            line-height: 1.6;
         }
 
-        .card {
-            background: var(--white);
+        .container {
             max-width: 500px;
-            width: 100%;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            margin: 0 auto;
+            background: white;
+            border-radius: 25px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
             overflow: hidden;
-            border-top: 8px solid var(--primary-blue);
         }
 
-        .header {
+        /* Hero Section */
+        .hero {
+            background: var(--swift-blue);
+            color: white;
+            padding: 30px 20px;
             text-align: center;
-            padding: 20px;
-            background: linear-gradient(135deg, #ffffff 0%, #e3f2fd 100%);
         }
 
-        .logo-text {
-            color: var(--primary-blue);
+        .logo-area h1 { margin: 0; font-size: 28px; text-transform: uppercase; letter-spacing: 1px; }
+        .hero p { margin: 10px 0 0; font-weight: 300; opacity: 0.9; }
+
+        /* Delivery Badge */
+        .delivery-badge {
+            background: #fff9c4;
+            color: #f57f17;
+            padding: 10px;
+            font-size: 0.9em;
+            text-align: center;
             font-weight: bold;
-            font-size: 24px;
-            text-transform: uppercase;
-            margin: 0;
+            border-bottom: 1px solid #eee;
         }
 
-        .price-list-title {
-            color: #2e7d32;
-            font-size: 28px;
-            letter-spacing: 2px;
-            margin: 10px 0;
-            border-bottom: 2px solid #eee;
-            display: inline-block;
+        /* Section Styling */
+        .section { padding: 20px; border-bottom: 8px solid #f8f9fa; }
+        .section-title {
+            color: var(--swift-blue);
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            border-left: 4px solid var(--swift-blue);
+            padding-left: 10px;
         }
 
-        .services {
-            padding: 20px;
-        }
-
-        .service-item {
+        .price-row {
             display: flex;
             justify-content: space-between;
-            padding: 12px 0;
-            border-bottom: 1px dashed #ddd;
+            padding: 8px 0;
+            border-bottom: 1px solid #f1f1f1;
         }
 
-        .service-name {
-            font-weight: 500;
-            color: #333;
+        .price-val { font-weight: bold; color: var(--swift-blue); }
+        .sub-text { font-size: 0.8em; color: #666; display: block; }
+
+        /* Special Offers Box */
+        .offers-box {
+            background: var(--swift-light-blue);
+            margin: 15px;
+            padding: 15px;
+            border-radius: 15px;
+            border: 2px dashed var(--swift-blue);
         }
 
-        .price {
-            font-weight: bold;
-            color: var(--primary-blue);
-        }
+        .offer-item { font-size: 0.9em; margin-bottom: 5px; display: block; }
 
-        .promo-note {
-            font-size: 0.85em;
-            color: #666;
-            font-style: italic;
-            display: block;
-        }
-
-        .contact-section {
-            background: #f9f9f9;
+        /* Floating Contact Buttons */
+        .contact-footer {
             padding: 20px;
+            background: white;
             text-align: center;
-        }
-
-        .location {
-            font-size: 0.9em;
-            margin-bottom: 15px;
-            color: #555;
-        }
-
-        /* Call to Action Buttons */
-        .cta-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
         }
 
         .btn {
-            text-decoration: none;
-            padding: 12px;
-            border-radius: 8px;
-            font-weight: bold;
-            color: white;
             display: flex;
             align-items: center;
             justify-content: center;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: white;
             transition: transform 0.2s;
         }
 
-        .btn:active { transform: scale(0.95); }
+        .btn:active { transform: scale(0.98); }
+        .btn-wa { background: #25D366; }
+        .btn-call { background: var(--swift-blue); }
 
-        .btn-call { background-color: var(--primary-blue); }
-        .btn-whatsapp { background-color: var(--accent-green); }
+        .location-text { font-size: 0.85em; color: #777; margin-top: 15px; }
 
-        .footer-note {
-            padding: 15px;
-            font-size: 0.8em;
-            text-align: center;
-            background: #eee;
-            color: #444;
-        }
     </style>
 </head>
 <body>
 
-<div class="card">
-    <div class="header">
-        <div class="logo-text">SWIFTCLEAN LAUNDRY</div>
-        <h1 class="price-list-title">PRICE LIST</h1>
+<div class="container">
+    <div class="hero">
+        <div class="logo-area">
+            <h1>Swiftclean</h1>
+            <div style="font-weight: bold;">LAUNDRY</div>
+        </div>
+        <p>Professional Cleaning & Laundry Services</p>
     </div>
 
-    <div class="services">
-        <div class="service-item">
-            <span class="service-name">Full Large Laundry Basket</span>
-            <span class="price">460</span>
+    <div class="delivery-badge">
+        🚚 Free Pickup & Delivery within Thika & Environs
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">🧺 Laundry Services</h2>
+        <div class="price-row">
+            <span>Large Laundry Basket</span>
+            <span class="price-val">450/=</span>
         </div>
-        <div class="service-item">
-            <span class="service-name">Full Small Laundry Basket</span>
-            <span class="price">360</span>
+        <div class="price-row">
+            <span>Small Laundry Basket</span>
+            <span class="price-val">350/=</span>
         </div>
-        <div class="service-item">
-            <span class="service-name">Weighing Option</span>
-            <span class="price">50 / kg</span>
-        </div>
-        <div class="service-item" style="flex-direction: column;">
-            <div style="display:flex; justify-content: space-between;">
-                <span class="service-name">Large Duvet</span>
-                <span class="price">450</span>
+        <div class="price-row">
+            <div>
+                <span>Clothes (by Weight)</span>
+                <span class="sub-text">For more than 5kg</span>
             </div>
-            <span class="promo-note">Free bedsheet & pillowcase wash</span>
-        </div>
-        <div class="service-item" style="flex-direction: column;">
-            <div style="display:flex; justify-content: space-between;">
-                <span class="service-name">Small Duvet</span>
-                <span class="price">350</span>
-            </div>
-            <span class="promo-note">Free bedsheet & pillowcase wash</span>
-        </div>
-        <div class="service-item">
-            <span class="service-name">One Pair of Shoes</span>
-            <span class="price">90</span>
-        </div>
-        <div class="service-item">
-            <span class="service-name">Piece of Cloth (Jacket, T-shirt, etc.)</span>
-            <span class="price">50</span>
-        </div>
-        <div class="service-item">
-            <span class="service-name">Mat / Carpet Cleaning</span>
-            <span class="price">350 - 600</span>
+            <span class="price-val">50/= per kg</span>
         </div>
     </div>
 
-    <div class="contact-section">
-        <p class="location">
-            📍 <strong>Location:</strong> Imperial - Runda Road<br>
-            (Newly constructed containers)
-        </p>
+    <div class="section">
+        <h2 class="section-title">🛌 Duvets & Blankets</h2>
+        <div class="price-row">
+            <span>Medium (5x6)</span>
+            <span class="price-val">350/=</span>
+        </div>
+        <div class="price-row">
+            <span>Large (6x6)</span>
+            <span class="price-val">450/=</span>
+        </div>
+        <div class="price-row">
+            <span>Normal Blanket</span>
+            <span class="price-val">200/=</span>
+        </div>
+        <div class="offers-box">
+            <span class="offer-item">✨ <strong>Bonus:</strong> Free bedsheet & pillowcase wash with every duvet!</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">🏠 House & Special Services</h2>
+        <div class="price-row"><span>Sofa Cleaning</span> <span class="price-val">450/= per seater</span></div>
+        <div class="price-row"><span>Carpet Cleaning</span> <span class="price-val">500/=</span></div>
+        <div class="price-row"><span>Mattress Cleaning</span> <span class="price-val">1000/= - 15000/=</span></div>
+        <div class="price-row"><span>1 Bedroom Full Clean</span> <span class="price-val">3000/=</span></div>
+        <div class="price-row"><span>Shoes (per pair)</span> <span class="price-val">90/=</span></div>
+    </div>
+
+    <div class="section" style="background: #fffbe6;">
+        <h2 class="section-title">⭐ Exclusive Offers</h2>
+        <ul style="font-size: 0.9em; padding-left: 20px;">
+            <li>Bring laundry 8 times, get the 9th at <strong>50% OFF</strong>!</li>
+            <li>Birthday Special: <strong>50% Discount</strong> for consistent customers!</li>
+            <li>Refer a friend: Get <strong>10% commission</strong></li>
+        </ul>
+    </div>
+
+    <div class="contact-footer">
+        <a href="https://wa.me/254758811941" class="btn btn-wa">
+            💬 WhatsApp Us
+        </a>
+        <a href="tel:0758811941" class="btn btn-call">
+            📞 Call: 0758 811 941
+        </a>
         
-        <div class="cta-container">
-            <a href="tel:0758811941" class="btn btn-call">📞 Call Now</a>
-            <a href="https://wa.me/254758811941" class="btn btn-whatsapp">💬 WhatsApp</a>
+        <div class="location-text">
+            📍 <strong>Location:</strong> Imperial-Runda Road<br>
+            (Newly constructed containers), Thika
         </div>
-    </div>
-
-    <div class="footer-note">
-        <strong>Note:</strong> Free pickup and Delivery within Thika and its environs.
     </div>
 </div>
 
 </body>
-
 </html>
